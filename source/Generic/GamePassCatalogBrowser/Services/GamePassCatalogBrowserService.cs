@@ -7,12 +7,12 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using GamePassCatalogBrowser.Models;
+using SteamSearchBrowser.Models;
 using System.Text.RegularExpressions;
 using FlowHttp;
 using PluginsCommon;
 
-namespace GamePassCatalogBrowser.Services
+namespace SteamSearchBrowser.Services
 {
     class GamePassCatalogBrowserService
     {

@@ -14,11 +14,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace GamePassCatalogBrowser
+namespace SteamSearchBrowser
 {
-    public partial class GamePassCatalogBrowserSettingsView : UserControl
+    public partial class SteamSearchBrowserSettingsView : UserControl
     {
-        public GamePassCatalogBrowserSettingsView()
+        public SteamSearchBrowserSettingsView()
         {
             InitializeComponent();
             // From https://www.xbox.com/en-US/regions

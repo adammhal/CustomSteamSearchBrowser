@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="SteamSearchBrowser.SteamSearchBrowserSettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="200" d:DesignWidth="600">
+    <StackPanel Margin="20">
+        <TextBlock FontSize="16" FontWeight="Bold" Margin="0,0,0,10">Steam Search Browser</TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+            Search for games on Steam and add them to your Playnite library. No configuration needed - just start searching!
+        </TextBlock>
+        <TextBlock TextWrapping="Wrap" Foreground="{DynamicResource TextBrushDarker}">
+            Version 3.0 - Steam Search functionality only
+        </TextBlock>
+    </StackPanel>
+</UserControl>

@@ -1,5 +1,13 @@
-AddonId: GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93
+AddonId: SteamSearchBrowser_50c85177-570f-4494-be16-99d6aa5b8a93
 Packages:
+  - Version: 3.0
+    RequiredApiVersion: 6.9.0
+    ReleaseDate: 2025-10-07
+    Changelog:
+      - Complete rebrand from Game Pass Catalog Browser to Steam Search Browser
+      - Added Steam search functionality with on-demand game discovery
+      - Renamed all classes and namespaces from GamePassCatalogBrowser to SteamSearchBrowser
+      - Kept legacy Game Pass catalog functionality intact
   - Version: 2.0
     RequiredApiVersion: 6.0.0
     ReleaseDate: 2021-09-05
@@ -21,179 +29,179 @@ Packages:
     ReleaseDate: 2021-09-30
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2.0-1/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_2.pext
     Changelog:
-    - Updated localizations
-    - Update to PlayniteSDK.6.0.0
+      - Updated localizations
+      - Update to PlayniteSDK.6.0.0
   - Version: 2.3
     RequiredApiVersion: 6.1.0
     ReleaseDate: 2021-10-18
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2.0-2/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_3.pext
     Changelog:
-    - Updated localizations
-    - Updated to Playnite SDK 6.1.0
+      - Updated localizations
+      - Updated to Playnite SDK 6.1.0
   - Version: 2.4
     RequiredApiVersion: 6.1.0
     ReleaseDate: 2021-10-24
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2.0-3/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_4.pext
     Changelog:
-    - Updated localizations
+      - Updated localizations
   - Version: 2.5
     RequiredApiVersion: 6.1.0
     ReleaseDate: 2021-11-09
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2.2/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_5.pext
     Changelog:
-    - Updated localizations
+      - Updated localizations
   - Version: 2.6
     RequiredApiVersion: 6.2.0
     ReleaseDate: 2021-12-14
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2.3/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_6.pext
     Changelog:
-    - Updated localizations
-    - Added button in catalog window to open game in Xbox app
+      - Updated localizations
+      - Added button in catalog window to open game in Xbox app
   - Version: 2.7
     RequiredApiVersion: 6.2.0
     ReleaseDate: 2021-12-16
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2.3/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_7.pext
     Changelog:
-    - Updated localizations
+      - Updated localizations
   - Version: 2.8
     RequiredApiVersion: 6.2.1
     ReleaseDate: 2022-01-11
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2.3/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_8.pext
     Changelog:
-    - Updated localizations
+      - Updated localizations
   - Version: 2.9
     RequiredApiVersion: 6.2.2
     ReleaseDate: 2022-01-24
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2.7/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_9.pext
     Changelog:
-    - Updated localizations
-    - Updated to Playnite SDK 6.2.2
+      - Updated localizations
+      - Updated to Playnite SDK 6.2.2
   - Version: 2.10
     RequiredApiVersion: 6.2.2
     ReleaseDate: 2022-01-28
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2.7/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_10.pext
     Changelog:
-    - Updated localizations
+      - Updated localizations
   - Version: 2.11
     RequiredApiVersion: 6.2.2
     ReleaseDate: 2022-02-14
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2.8/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_11.pext
     Changelog:
-    - Updated localizations
+      - Updated localizations
   - Version: 2.12
     RequiredApiVersion: 6.2.2
     ReleaseDate: 2022-03-13
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2.9/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_12.pext
     Changelog:
-    - Improved extension codebase structure
-    - Misc improvements
-    - Import default configured Completion Status for added games
+      - Improved extension codebase structure
+      - Misc improvements
+      - Import default configured Completion Status for added games
   - Version: 2.13
     RequiredApiVersion: 6.2.2
     ReleaseDate: 2022-03-14
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2.9/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_13.pext
     Changelog:
-    - 'Fix some games being added with an incorrect ReleaseDate to the Playnite library'
+      - "Fix some games being added with an incorrect ReleaseDate to the Playnite library"
   - Version: 2.14
     RequiredApiVersion: 6.2.2
     ReleaseDate: 2022-03-17
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2022.03.17_881638e7/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_14.pext
     Changelog:
-    - 'Updated localizations'
+      - "Updated localizations"
   - Version: 2.15
     RequiredApiVersion: 6.2.2
     ReleaseDate: 2022-03-23
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2022.03.23_32f4ed05/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_15.pext
     Changelog:
-    - 'Updated localizations'
+      - "Updated localizations"
   - Version: 2.16
     RequiredApiVersion: 6.2.2
     ReleaseDate: 2022-03-25
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2022.03.25_aae44e45/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_16.pext
     Changelog:
-    - 'Updated localizations'
+      - "Updated localizations"
   - Version: 2.17
     RequiredApiVersion: 6.2.2
     ReleaseDate: 2022-04-03
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2022.04.03_3ad2d023/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_17.pext
     Changelog:
-    - 'Updated localizations'
+      - "Updated localizations"
   - Version: 2.18
     RequiredApiVersion: 6.2.2
     ReleaseDate: 2022-06-11
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2022.06.11_f6b6813d/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_18.pext
     Changelog:
-    - 'Updated localizations'
-    - 'Performance improvements to games processing'
+      - "Updated localizations"
+      - "Performance improvements to games processing"
   - Version: 2.19
     RequiredApiVersion: 6.2.2
     ReleaseDate: 2022-06-18
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2022.06.18_251f0687/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_19.pext
     Changelog:
-    - 'Updated localizations'
+      - "Updated localizations"
   - Version: 2.20
     RequiredApiVersion: 6.2.2
     ReleaseDate: 2022-07-08
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2022.07.08_f601c982/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_20.pext
     Changelog:
-    - 'Updated localizations'
+      - "Updated localizations"
   - Version: 2.21
     RequiredApiVersion: 6.2.2
     ReleaseDate: 2022-07-12
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2022.07.12_b41484b1/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_21.pext
     Changelog:
-    - 'Fix failing to obtain catalog games correctly. If data is missing, please use the Reset Cache menu option'
+      - "Fix failing to obtain catalog games correctly. If data is missing, please use the Reset Cache menu option"
   - Version: 2.22
     RequiredApiVersion: 6.2.2
     ReleaseDate: 2022-08-21
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2022.08.21_54d33423/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_22.pext
     Changelog:
-    - 'Improved stability of internet downloads'
+      - "Improved stability of internet downloads"
   - Version: 2.23
     RequiredApiVersion: 6.2.2
     ReleaseDate: 2022-12-18
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2022.12.18_90324fb4/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_23.pext
     Changelog:
-    - 'Added sidebar icon to open Catalog Browser view'
+      - "Added sidebar icon to open Catalog Browser view"
   - Version: 2.24
     RequiredApiVersion: 6.2.2
     ReleaseDate: 2023-02-15
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2023.02.15_7796d0ce/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_24.pext
     Changelog:
-    - 'Updated links'
+      - "Updated links"
   - Version: 2.25
     RequiredApiVersion: 6.2.2
     ReleaseDate: 2023-04-11
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2023.04.11_03a5475a/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_25.pext
     Changelog:
-    - 'Updated localizations'
+      - "Updated localizations"
   - Version: 2.26
     RequiredApiVersion: 6.9.0
     ReleaseDate: 2023-11-11
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2023.11.11_3bf6575c/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_26.pext
     Changelog:
-    - 'Improved: Processing of internet requests'
+      - "Improved: Processing of internet requests"
   - Version: 2.27
     RequiredApiVersion: 6.9.0
     ReleaseDate: 2024-03-17
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2024.03.17_527a9df9/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_27.pext
     Changelog:
-    - 'Changed: Updated localizations'
+      - "Changed: Updated localizations"
   - Version: 2.28
     RequiredApiVersion: 6.9.0
     ReleaseDate: 2024-05-12
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2024.05.12_b43337e1/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_28.pext
     Changelog:
-    - 'Changed: Updated localizations'
+      - "Changed: Updated localizations"
   - Version: 2.29
     RequiredApiVersion: 6.9.0
     ReleaseDate: 2024-05-31
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2024.05.31_4157eed2/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_29.pext
     Changelog:
-    - 'Fixed: Not adding tags that indicate that games imported on Playnite have expired on Game Pass (By sukarn-m)'
+      - "Fixed: Not adding tags that indicate that games imported on Playnite have expired on Game Pass (By sukarn-m)"
   - Version: 2.30
     RequiredApiVersion: 6.9.0
     ReleaseDate: 2025-07-05
     PackageUrl: https://github.com/darklinkpower/PlayniteExtensionsCollection/releases/download/2025.07.05_c6fc93a5/GamePassCatalogBrowser_50c85177-570f-4494-be16-99d6aa5b8a93_2_30.pext
     Changelog:
-    - 'Added: Support for more countries when selecting the Game Pass catalog region in the extension settings.'
+      - "Added: Support for more countries when selecting the Game Pass catalog region in the extension settings."

@@ -1,4 +1,4 @@
-﻿using GamePassCatalogBrowser.Models;
+﻿using SteamSearchBrowser.Models;
 using Playnite.SDK;
 using Playnite.SDK.Models;
 using PlayniteUtilitiesCommon;
@@ -14,7 +14,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace GamePassCatalogBrowser
+namespace SteamSearchBrowser
 {
     class XboxLibraryHelper
     {

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
 using System.Web;
-using GamePassCatalogBrowser.Models;
+using SteamSearchBrowser.Models;
 using Playnite.SDK;
 using Playnite.SDK.Models;
 using System.IO;
@@ -15,7 +15,7 @@ using System.Net;
 using System.Collections;
 using PluginsCommon;
 
-namespace GamePassCatalogBrowser.ViewModels
+namespace SteamSearchBrowser.ViewModels
 {
     class CatalogBrowserViewModel
     {

@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace GamePassCatalogBrowser.Views
+namespace SteamSearchBrowser.Views
 {
     /// <summary>
     /// Interaction logic for BrowserWindowView.xaml

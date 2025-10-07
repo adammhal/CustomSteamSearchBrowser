@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GamePassCatalogBrowser.Models
+namespace SteamSearchBrowser.Models
 {
     public partial class GamePassCatalogProduct
     {

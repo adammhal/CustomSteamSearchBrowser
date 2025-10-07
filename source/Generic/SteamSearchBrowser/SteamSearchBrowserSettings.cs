@@ -1,27 +1,13 @@
 ﻿using Playnite.SDK;
 using Playnite.SDK.Data;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-
-namespace GamePassCatalogBrowser
+namespace SteamSearchBrowser
 {
-    public class GamePassCatalogBrowserSettings
+    public class SteamSearchBrowserSettings
     {
-        public bool UpdateCatalogOnLibraryUpdate { get; set; } = true;
-        public bool NotifyCatalogUpdates { get; set; } = true;
-        public bool AddExpiredTagToGames { get; set; } = true;
-        public bool AddNewGames { get; set; } = false;
-        public bool RemoveExpiredGames { get; set; } = false;
-        public string RegionCode { get; set; } = "US";
-
-        // Playnite serializes settings object to a JSON object and saves it as text file.
-        // If you want to exclude some property from being saved then use `JsonDontSerialize` ignore attribute.
-        [DontSerialize]
-        public bool OptionThatWontBeSaved { get; set; } = false;
+        // Currently no settings needed for Steam Search
+        // Placeholder for future settings like max search results, default filters, etc.
     }
 
     public class SteamSearchBrowserSettingsViewModel : ObservableObject, ISettings
