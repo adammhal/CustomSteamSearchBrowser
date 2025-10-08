@@ -1,11 +1,11 @@
 ﻿using Playnite.SDK;
 using Playnite.SDK.Data;
+using Playnite.SDK.Plugins;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 
 namespace GamePassCatalogBrowser
 {
@@ -24,9 +24,15 @@ namespace GamePassCatalogBrowser
         public bool OptionThatWontBeSaved { get; set; } = false;
     }
 
+    public class SteamSearchBrowserSettings : GamePassCatalogBrowserSettings
+    {
+        // Steam-specific settings can be added here in the future
+        public int MaxSearchResults { get; set; } = 30;
+    }
+
     public class SteamSearchBrowserSettingsViewModel : ObservableObject, ISettings
     {
-        private readonly SteamSearchBrowser plugin;
+        private readonly GenericPlugin plugin;
         private SteamSearchBrowserSettings editingClone { get; set; }
 
         private SteamSearchBrowserSettings settings;
@@ -40,7 +46,7 @@ namespace GamePassCatalogBrowser
             }
         }
 
-        public SteamSearchBrowserSettingsViewModel(SteamSearchBrowser plugin)
+        public SteamSearchBrowserSettingsViewModel(GenericPlugin plugin)
         {
             // Injecting your plugin instance is required for Save/Load method because Playnite saves data to a location based on what plugin requested the operation.
             this.plugin = plugin;

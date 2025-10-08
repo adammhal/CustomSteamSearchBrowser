@@ -14,6 +14,7 @@ using SteamSearchBrowser.Models;
 using SteamSearchBrowser.Services;
 using SteamSearchBrowser.ViewModels;
 using SteamSearchBrowser.Views;
+using GamePassCatalogBrowser;
 using System.Reflection;
 using System.IO;
 using System.Windows.Media;
