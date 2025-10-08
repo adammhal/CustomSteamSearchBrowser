@@ -282,8 +282,64 @@ namespace SteamSearchBrowser.ViewModels
                 }
 
                 playniteApi.Database.Games.Update(game);
+                
                 StatusMessage = $"Added '{SelectedGame.Name}' to library";
-                playniteApi.Dialogs.ShowMessage($"'{SelectedGame.Name}' has been added to your library!", "Game Added");
+                
+                // Automatically select the game and provide easy metadata download instructions
+                try
+                {
+                    // Use a background task to select the game
+                    Task.Run(async () =>
+                    {
+                        try
+                        {
+                            // Wait a moment for the game to be fully added to database
+                            await Task.Delay(300);
+                            
+                            // Select the game in the main view so it's ready for metadata download
+                            playniteApi.MainView.UIDispatcher.Invoke(() =>
+                            {
+                                try
+                                {
+                                    playniteApi.MainView.SelectGame(game.Id);
+                                    logger.Info($"Auto-selected game '{game.Name}' in library");
+                                    
+                                    // Show helpful instructions
+                                    var result = playniteApi.Dialogs.ShowMessage(
+                                        $"✅ '{SelectedGame.Name}' has been added and selected in your library!\n\n" +
+                                        "🎨 To download full metadata (icon, cover, background, etc.):\n\n" +
+                                        "   → Simply press F3 now\n" +
+                                        "   → Or right-click the game and select 'Download Metadata'\n\n" +
+                                        "Then choose IGDB as your source and select the metadata fields you want.\n\n" +
+                                        "Would you like to see this tip again next time?",
+                                        "Game Added Successfully!",
+                                        MessageBoxButton.YesNo,
+                                        MessageBoxImage.Information);
+                                    
+                                    // You could save the user's preference here if needed
+                                    if (result == MessageBoxResult.No)
+                                    {
+                                        logger.Info("User chose not to see metadata tip again");
+                                        // Could save this preference to settings
+                                    }
+                                }
+                                catch (Exception ex)
+                                {
+                                    logger.Warn(ex, "Error selecting game or showing message");
+                                }
+                            });
+                        }
+                        catch (Exception ex)
+                        {
+                            logger.Error(ex, "Error in game selection background task");
+                        }
+                    });
+                }
+                catch (Exception ex)
+                {
+                    logger.Warn(ex, "Failed to trigger game selection");
+                }
+                
                 OnPropertyChanged(nameof(CanAddToLibrary));
             }
             catch (Exception ex)

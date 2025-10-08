@@ -96,11 +96,11 @@
                                 </Style.Triggers>
                             </Style>
                         </StackPanel.Style>
-                        <TextBlock Text="Developer: " FontWeight="Bold"/>
+                        <TextBlock Text="Developer: " FontWeight="Bold" Foreground="White"/>
                         <ItemsControl ItemsSource="{Binding SelectedGame.Developers}">
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate>
-                                    <TextBlock Text="{Binding}" Margin="0,0,5,0"/>
+                                    <TextBlock Text="{Binding}" Margin="0,0,5,0" Foreground="White"/>
                                 </DataTemplate>
                             </ItemsControl.ItemTemplate>
                             <ItemsControl.ItemsPanel>
@@ -122,11 +122,11 @@
                                 </Style.Triggers>
                             </Style>
                         </StackPanel.Style>
-                        <TextBlock Text="Publisher: " FontWeight="Bold"/>
+                        <TextBlock Text="Publisher: " FontWeight="Bold" Foreground="White"/>
                         <ItemsControl ItemsSource="{Binding SelectedGame.Publishers}">
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate>
-                                    <TextBlock Text="{Binding}" Margin="0,0,5,0"/>
+                                    <TextBlock Text="{Binding}" Margin="0,0,5,0" Foreground="White"/>
                                 </DataTemplate>
                             </ItemsControl.ItemTemplate>
                             <ItemsControl.ItemsPanel>
